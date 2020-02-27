@@ -90,11 +90,11 @@ function getTransactionsCount() {
 
     for (let ut of user.transactions) {
         if (ut.type == "credit") {
-            objectResultSum.credit += 1
+            objectResultSum.credit++
         }
 
         if (ut.type == "debit") {
-            objectResultSum.debit += 1
+            objectResultSum.debit++
         }
     }
 
@@ -112,6 +112,7 @@ function main() {
 
     console.log("Higher transaction DEBIT:")
     console.table(getHigherTransactionByType("debit"))
+
     console.log("Average transaction: " + getAverageTransactionValue())
     console.log(getTransactionsCount())
 }
