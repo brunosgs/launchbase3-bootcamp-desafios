@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Oxanium:400,700|Roboto:400,700&display=swap');
+:root {
+    --green-color: #50fa7b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #282a36;
+}
+
+header .menu {
+    padding: 30px;
+    border-bottom: 1px solid #333;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu a {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: var(--green-color);
+    transition: color 0.4s;
+}
+
+.wrapper {
+    color: #ffffff;
+    text-align: center;
+}
+
+.wrapper #logo-empresa {
+    width: 150px;
+    border-radius: 50%;
+    padding: 35px 0;
+}
