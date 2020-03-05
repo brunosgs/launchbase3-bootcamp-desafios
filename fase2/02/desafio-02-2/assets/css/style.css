@@ -43,7 +43,38 @@ header .menu {
 }
 
 .wrapper #logo-empresa {
-    width: 150px;
+    width: 200px;
     border-radius: 50%;
-    padding: 35px 0;
+    margin: 35px auto;
+}
+
+.wrapper #logo-empresa:hover {
+    border: 5px solid var(--green-color);
+    transition: 1s;
+}
+
+h1 {
+    font-size: 68.72px;
+}
+
+p {
+    font-size: 18px;
+}
+
+h2 {
+    margin-top: 16px;
+}
+
+ul>li {
+    padding: 5px;
+}
+
+footer {
+    width: 100%;
+    position: relative;
+    margin: 25px auto;
+}
+
+#links-footer.menu a {
+    border-bottom: 1px solid var(--green-color);
 }
