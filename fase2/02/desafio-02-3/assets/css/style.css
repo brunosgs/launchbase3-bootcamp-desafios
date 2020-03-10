@@ -69,11 +69,12 @@ header .menu {
     width: 200px;
     border-radius: 50%;
     margin: 35px auto;
+    border: 5px solid transparent;
 }
 
 .wrapper #logo-empresa:hover {
     border: 5px solid var(--green-color);
-    transition: 1s;
+    transition: 0.4s;
 }
 
 .cards {
@@ -89,6 +90,7 @@ header .menu {
     width: 250px;
     padding: 15px;
     border-radius: 15px;
+    color: #ffffff;
     background: #2f4f4f;
     border: 1px solid transparent;
 }
@@ -102,11 +104,18 @@ header .menu {
     height: 145px;
 }
 
+.card-content {
+    padding: 25px;
+}
+
 .card-info {
-    margin-top: 25px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
+}
+
+.card-info p {
+    padding: 8px;
 }
 
 .card-info .card-price {
@@ -135,21 +144,42 @@ header .menu {
     background-color: #ffffff;
 }
 
+.modal .btn-maximize {
+    color: #000000;
+    position: absolute;
+    right: 40px;
+    top: 8px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.modal .btn-maximize:hover {
+    border-radius: 5px;
+    color: var(--green-color);
+    transition: 0.5s;
+}
+
 .modal .close-modal {
     color: #000000;
     position: absolute;
     right: 8px;
     top: 8px;
-    height: 24px;
-    border: 1px solid transparent;
+    height: 22px;
     cursor: pointer;
 }
 
 .modal .close-modal:hover {
-    border: 1px solid;
     border-radius: 5px;
     color: #ff0000;
     transition: 0.5s;
+}
+
+.maximize {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: #ffffff;
 }
 
 
