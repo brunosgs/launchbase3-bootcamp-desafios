@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Oxanium:400,700|Roboto:400,700&display=swap');
+
 /* === RESET ===*/
 
 * {
@@ -7,6 +9,69 @@
 }
 
 body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* === HEADER === */
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    max-width: 940px;
+    margin: 37px auto 30px auto;
+}
+
+.navbar .logo {
+    height: 27px;
+}
+
+.navbar .menu {
+    text-align: left;
+}
+
+.navbar .menu a {
+    color: #000000;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+
+/* === SECTIONS ===*/
+
+.contain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     max-width: 940px;
     margin: 0 auto;
+    background: #FBDFDB;
+    height: 366px;
+    border-radius: 30px;
+}
+
+.text-contain {
+    padding-top: 117px;
+    padding-left: 60px;
+}
+
+.description h1 {
+    color: #111111;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.description p {
+    color: #000000;
+    opacity: 0.7;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.img-contain img {
+    padding: 66px 100px 0 248px;
+}
+
+footer {
+    background: #EEEEEE;
+    height: 62px;
 }
