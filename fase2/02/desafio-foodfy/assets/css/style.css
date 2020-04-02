@@ -71,8 +71,12 @@ body {
     margin-top: 10px;
 }
 
+.contain .img-contain {
+    height: inherit;
+}
+
 .contain .img-contain img {
-    padding: 62px 100px 0 154px;
+    padding: 66px 100px 0 154px;
 }
 
 .accessed {
