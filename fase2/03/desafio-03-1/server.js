@@ -1,27 +1,27 @@
 const express = require('express')
 const nunjucks = require('nunjucks')
 
-const app = express()
+const server = express()
 
-app.set("view engine", "njk")
-app.use(express.static('public'))
+server.set("view engine", "njk")
+server.use(express.static('public'))
 
 nunjucks.configure("views", {
-    express: app
+    express: server
 })
 
-app.get("/", function (req, res) {
+server.get("/", function(req, res) {
     return res.render("about")
 })
 
-app.get("/courses", function (req, res) {
+server.get("/courses", function(req, res) {
     return res.render("courses")
 })
 
-app.use(function (req, res) {
+server.use(function(req, res) {
     res.status(404).render("not-found");
 })
 
-app.listen(5000, function () {
+server.listen(5000, function() {
     console.log("Server is running...")
 })
