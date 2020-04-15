@@ -6,16 +6,15 @@
 * [NodeJS](https://nodejs.org/en/)
 
 E a configuração de:
-* Express
+Express:
 ```
 npm install express
 ```
 
-* Nunjucks
+Nunjucks:
 ```
 npm install nunjucks
 ```
-
 Apartir dos desafios 3, o mesmos utilizam. Para iniciar os servidores dos mesmo abra o terminal direcionado a pasta e digite:
 
 ```
