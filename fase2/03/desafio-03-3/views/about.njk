@@ -1,0 +1,32 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Desafio 3-3 - Sobre</title>
+{% endblock %}}
+
+{% block wrapper %}
+    <section>
+        <div class="wrapper">
+            <img id="logo-empresa" src="assets/img/logo-rocketseat.png" alt="Rocketseat">
+            <article>
+                <h1>{{about.title}}</h1>
+                <p>{{about.description}}</p>
+                <h2>{{about.subtitle}}</h2>
+                <ul>
+                    {% for item in about.items %}
+                        <li>{{item.item}}</li>
+                    {% endfor %}
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <div id="links-footer" class="menu">
+            <a href="https://github.com/Rocketseat" target="_blank">Github</a>
+            <a href="https://www.linkedin.com/school/rocketseat/about/" target="_blank">LinkedIn</a>
+            <a href="https://www.facebook.com/rocketseat/" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/rocketseat_oficial/" target="_blank">Instagram</a>
+        </div>
+    </footer>
+{% endblock %}

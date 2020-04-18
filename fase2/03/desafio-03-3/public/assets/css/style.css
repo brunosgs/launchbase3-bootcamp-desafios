@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Oxanium:400,700|Roboto:400,700&display=swap');
+:root {
+    --green-color: #50fa7b;
+    --rocket-color: #7159c1;
+    --rocket-orange-color: #f19e03;
+    --white-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #282a36;
+}
+
+h1 {
+    font-size: 68.72px;
+}
+
+p {
+    font-size: 18px;
+}
+
+h2 {
+    margin-top: 16px;
+}
+
+ul>li {
+    padding: 5px;
+}
+
+
+/* ===== MENU's ===== */
+
+header .menu {
+    padding: 30px;
+    border-bottom: 1px solid #333;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu a {
+    color: var(--white-color);
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: var(--green-color);
+    transition: color 0.4s;
+}
+
+
+/* ===== BODY =====*/
+
+.wrapper {
+    color: var(--white-color);
+    text-align: center;
+}
+
+.wrapper #logo-empresa {
+    width: 200px;
+    border-radius: 50%;
+    margin: 35px auto;
+    border: 5px solid transparent;
+}
+
+.wrapper #logo-empresa:hover {
+    border: 5px solid var(--green-color);
+    transition: 0.4s;
+}
+
+.cards {
+    max-width: 900px;
+    margin: 75px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.card {
+    background: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+    padding: 15px;
+    border-radius: 15px;
+    color: var(--white-color);
+    border: 1px solid transparent;
+}
+
+.card:hover {
+    border: 1px solid var(--green-color);
+    transition: 0.5s;
+}
+
+.card-img img {
+    height: 145px;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.card-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.card-info p {
+    padding: 8px;
+}
+
+.card-info .card-price {
+    border-radius: 15px;
+    background: #2f4f4f;
+}
+
+.card-courses-description .card {
+    width: 600px;
+    margin: 90px auto;
+}
+
+.course-link {
+    margin-top: 25px;
+    color: var(--white-color);
+}
+
+a.link-starter {
+    color: var(--rocket-color);
+}
+
+a.link-launchbase {
+    color: var(--rocket-orange-color);
+}
+
+a.link-gostack {
+    color: var(--green-color);
+}
+
+.course-link a {
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    margin: 0;
+}
+
+.course-link a:hover {
+    border: 1px solid var(--green-color);
+    transition: 0.5s;
+}
+
+
+/* ===== FOOTER ===== */
+
+footer {
+    width: 100%;
+    position: relative;
+    margin: 25px auto;
+}
+
+#links-footer.menu a {
+    border-bottom: 1px solid var(--green-color);
+}
